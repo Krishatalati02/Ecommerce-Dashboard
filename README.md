@@ -1,1 +1,1 @@
-# Ecommerce-Dashboard
+This project is a eCommerce Dashboard created using HTML and CSS. The dashboard is designed to provide an intuitive interface for users to manage their online store, view analytics, and track performance metrics. It includes sections for customer management, featured products, and sales analysis, displayed in a clean and structured layout.
