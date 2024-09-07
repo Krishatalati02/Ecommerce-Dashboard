@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg' );
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 50px 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 20px; 
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin-bottom: 30px; 
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px; 
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #1a0202;
+            font-size: 14px;
+        }
+
+        .password-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .password-row a {
+            text-decoration: none;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .password-row a:hover {
+            text-decoration: underline;
+        }
+
+        .remember-password {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; 
+        }
+
+        .remember-password input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px; 
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-container p {
+            color: #7f8186;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Account</h2>
+        <p class="subtitle">Please enter your email and password to continue</p>
+        <form>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" placeholder="Your email">
+
+            <div class="password-row">
+                <label for="password">Password:</label>
+                <a href="#">Forget Password?</a>
+            </div>
+            <input type="password" id="password" placeholder="Your password">
+
+            <div class="remember-password">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Password</label>
+            </div>
+            
+            <button type="button" onclick="location.href='index.html';">Sign In</button>
+
+            
+            <p>Don't have an account?<a href="signup.html"> Create an Account</a></p>
+        </form>
+    </div>
+</body>
+</html>

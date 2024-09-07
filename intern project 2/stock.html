@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="logo">
+                <h2>DashStack</h2>
+            </div>
+            <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="product.html"><i class="fas fa-box-open"></i> Products</a>
+            <a href="fav.html"><i class="fas fa-heart"></i> Favorites</a>
+            <a href="inbox.html"><i class="fas fa-inbox"></i> Inbox</a>
+            <a href="order.html"><i class="fas fa-list"></i> Order List</a>
+            <a href="#"><i class="fas fa-cubes"></i> Product Stock</a>
+
+            <p class="sidebar-title">Pages</p>
+            <a href="pricing.html"><i class="fas fa-dollar-sign"></i> Pricing</a>
+            <a href="calendar.html"><i class="fas fa-calendar-alt"></i> Calendar</a>
+            <a href="todo.html"><i class="fas fa-check-square"></i> To-Do</a>
+            <a href="contact.html"><i class="fas fa-address-book"></i> Contact</a>
+            <a href="invoice.html"><i class="fas fa-file-invoice"></i> Invoice</a>
+            <a href="ui.html"><i class="fas fa-sliders-h"></i> UI Elements</a>
+            <a href="team.html"><i class="fas fa-users"></i> Team</a>
+            <a href="table.html"><i class="fas fa-table"></i> Table</a>
+        </div>
+
+        <div class="settings-logout">
+            <p class="sidebar-title">Settings</p>
+            <a href="setting.html"><i class="fas fa-cog"></i> Settings</a>
+            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="right-header">
+                <i class="fas fa-bell notification-icon"></i> <!-- Bell Icon -->
+                <select class="language-selector">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="Canadian">Canadian</option>
+                </select>
+                <div class="user-info">
+                    <img src="https://play-lh.googleusercontent.com/LqgSQHWNv9Dc7DS_J3BgYfZviCti_RBgQNDUHqFWqMLkdhbBxXOQy7cacNXCz5mSMqQ=w240-h480-rw" alt="Profile" class="profile-image">
+                    <div class="profile-details">
+                        <p class="admin-name">Admin</p>
+                        <p class="name">Krisha Talati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Stock Section -->
+        <div class="product-stock-section">
+            <div class="header-section">
+                <h1>Product Stock</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Piece</th>
+                        <th>Available Color</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7Qs-yH11m3ECwHSp0iNe39v1GiwoyljqqQ&s" alt="Apple Watch" class="product-image"></td>
+                        <td>Apple Watch Series 4</td>
+                        <td>Digital Product</td>
+                        <td>$690.00</td>
+                        <td>63</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color black"></span>
+                                <span class="color pink"></span>
+                                <span class="color red"></span>
+                                <span class="color gray"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa0qKctOKlzwDsOP7N1V8vQyThFq04HqfUkA&s" alt="Microsoft Headphones" class="product-image"></td>
+                        <td>Microsoft Headphones</td>
+                        <td>Digital Product</td>
+                        <td>$190.00</td>
+                        <td>13</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color black"></span>
+                                <span class="color gray"></span>
+                                <span class="color white"></span>
+                                <span class="color blue"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.refurbished.store/cache/images/samsung-galaxy-a50-zwart-frontandback_600x600_BGresize_16777215-tj.png" class="product-image"></td>
+                        <td>Samsung A50</td>
+                        <td>Mobile</td>
+                        <td>$400.00</td>
+                        <td>67</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color black"></span>
+                                <span class="color white"></span>
+                                <span class="color blue"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://rukminim2.flixcart.com/image/850/1000/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=90&crop=false" alt="Camera" class="product-image"></td>
+                        <td>Camera</td>
+                        <td>Electronic</td>
+                        <td>$420.00</td>
+                        <td>52</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color black"></span>
+                                <span class="color red"></span>
+                                <span class="color gray"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/61WQSvgxsHL._AC_UF1000,1000_QL80_.jpg" alt="Microsoft Headphones" class="product-image"></td>
+                        <td>Microsoft Headphones</td>
+                        <td>Digital Product</td>
+                        <td>$190.00</td>
+                        <td>13</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color black"></span>
+                                <span class="color gray"></span>
+                                <span class="color white"></span>
+                                <span class="color blue"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw68719691/images/ss24/ribayat2344ss24skblu_1.jpg?sw=242&sh=363" alt="Women's Dress" class="product-image"></td>
+                        <td>Women's Dress</td>
+                        <td>Fashion</td>
+                        <td>$640.00</td>
+                        <td>635</td>
+                        <td>
+                            <div class="color-options">
+                                <span class="color maroon"></span>
+                                <span class="color blue"></span>
+                                <span class="color pink"></span>
+                                <span class="color purple"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <i class="fas fa-edit action-icon"></i>
+                            <i class="fas fa-trash action-icon"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
